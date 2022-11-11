@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/dmu-blog-prac/static/js/main.6bc746cd.js",
+    "main.js": "/dmu-blog-prac/static/js/main.70cce146.js",
     "static/js/787.71df535f.chunk.js": "/dmu-blog-prac/static/js/787.71df535f.chunk.js",
     "index.html": "/dmu-blog-prac/index.html",
-    "main.6bc746cd.js.map": "/dmu-blog-prac/static/js/main.6bc746cd.js.map",
+    "main.70cce146.js.map": "/dmu-blog-prac/static/js/main.70cce146.js.map",
     "787.71df535f.chunk.js.map": "/dmu-blog-prac/static/js/787.71df535f.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.6bc746cd.js"
+    "static/js/main.70cce146.js"
   ]
 }
