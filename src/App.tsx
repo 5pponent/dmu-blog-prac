@@ -6,6 +6,7 @@ import Portfolio from "./components/Portfolio";
 import ErrorPage from "./components/ErrorPage";
 import Header from "./components/Header";
 import {Box} from "@mui/material";
+import Card from '@mui/material/Card';
 
 function App() {
 
@@ -14,24 +15,32 @@ function App() {
 
       <Header/>
 
-      <Box mt={10} width={500} mx={"auto"}>
-        <Routes>
-          <Route path={"/resume"} element={
-            <Resume/>
-          }></Route>
+      <Box width={"100%"} height={"100vh"} bgcolor={"#dddddd"}>
+        <Box p={5} pt={13}>
+          <Card variant="outlined">
 
-          <Route path={"/portfolio"} element={
-            <Portfolio/>
-          }></Route>
+            <Box height={"70vh"} overflow={"auto"} p={3}>
+            <Routes>
+              <Route path={"/resume"} element={
+                <Resume/>
+              }></Route>
 
-          <Route path={"/"} element={
-            <Home/>
-          }></Route>
+              <Route path={"/portfolio"} element={
+                <Portfolio/>
+              }></Route>
 
-          <Route path={"*"} element={
-            <ErrorPage/>
-          }></Route>
-        </Routes>
+              <Route path={"/"} element={
+                <Home/>
+              }></Route>
+
+              <Route path={"*"} element={
+                <ErrorPage/>
+              }></Route>
+            </Routes>
+            </Box>
+
+          </Card>
+        </Box>
       </Box>
       
     </BrowserRouter>

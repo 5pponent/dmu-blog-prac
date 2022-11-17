@@ -13,19 +13,19 @@ const StyledButton = styled(ButtonBase)`
 export default function Header() {
 
   const navigate = useNavigate();
-  const [nav, setNav] = useState("");
+  const [nav, setNav] = useState("HOME");
 
   return (
-    <AppBar style={{backgroundColor: "gray"}}>
+    <AppBar style={{backgroundColor: "#282828"}}>
       <Toolbar style={{
-        display: "flex", justifyContent: "center", alignItems: "center",
+        display: "flex", alignItems: "center",
       }}>
         <StyledButton
           style={{backgroundColor: nav === "HOME" ? "dodgerblue" : ""}}
           onClick={() => {
             setNav("HOME");
             navigate(`/`);
-        }}>메인</StyledButton>
+        }}>HOME</StyledButton>
         <StyledButton
           style={{backgroundColor: nav === "RESUME" ? "dodgerblue" : ""}}
           onClick={() => {
