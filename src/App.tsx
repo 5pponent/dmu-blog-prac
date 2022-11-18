@@ -7,6 +7,7 @@ import ErrorPage from "./components/ErrorPage";
 import Header from "./components/Header";
 import {Box} from "@mui/material";
 import Card from '@mui/material/Card';
+import GuestBook from "./components/GuestBook";
 
 function App() {
 
@@ -27,6 +28,10 @@ function App() {
 
               <Route path={"/portfolio"} element={
                 <Portfolio/>
+              }></Route>
+
+              <Route path={"/guestbook"} element={
+                <GuestBook/>
               }></Route>
 
               <Route path={"/"} element={

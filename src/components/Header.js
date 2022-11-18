@@ -48,6 +48,12 @@ export default function Header() {
               setNav("PORTFOLIO");
               navigate(`/portfolio`);
             }}>포트폴리오</StyledButton>
+          <StyledButton
+            style={{backgroundColor: nav === "GUESTBOOK" ? "dodgerblue" : ""}}
+            onClick={() => {
+              setNav("GUESTBOOK");
+              navigate(`/guestbook`);
+            }}>방명록</StyledButton>
         </Stack>
 
         <Stack direction={"row"} spacing={1}>
