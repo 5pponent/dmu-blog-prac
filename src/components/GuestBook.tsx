@@ -38,6 +38,7 @@ export default function GuestBook() {
       content: content
     })
       .then(res => {
+        console.log(res.data);
         setOpen(false);
         fetchGuestBooks();
       })
